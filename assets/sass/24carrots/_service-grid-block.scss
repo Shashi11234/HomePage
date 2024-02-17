@@ -1,0 +1,98 @@
+.service-grid-block{
+  display: flex;
+  padding-bottom: 100px;
+  padding-top:100px;
+  .service-grid-column{
+    width: 33.33%;
+    float: left;
+    img{
+      border-top-left-radius: 200px;
+      border-top-right-radius: 200px;
+    }
+  }
+  .service-block{
+    padding: 20px 20px 0;
+    max-width: 319px;
+    cursor: pointer;
+
+    &.small{
+      max-width: 300px;
+      float: right;
+      margin-right: 30px;
+    }
+    &.large{
+      max-width: 360px;
+    }
+
+    &.alignright{
+      float: right;
+      margin: 0 0 0px 30px;
+    }
+    &.hover-1{
+      h4:before{
+        background-image: url("img/animate/circlerd-hover_3.gif");
+      }
+    }
+    &.hover-2{
+      h4:before{
+        background-image: url("img/animate/circlerd-hover_2.gif");
+        width: 247px;
+        top: -7px;
+        left: -40px;
+      }
+    }
+    &.hover-3{
+      h4:before{
+        background-image: url("img/animate/circlerd-hover_1.gif");
+        left: -57px;
+        width: 221px;
+      }
+    }
+    &.hover-4{
+      h4:before{
+        background-image: url("img/animate/circlerd-hover_4.gif");
+        top: -4px;
+      }
+    }
+
+    h4:before{
+      content: '';
+      width: 310px;
+      height: 80px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -12px;
+      left: -21px;
+      display: none;
+    }
+
+    &:hover{
+        h4:before{
+          display: block;
+        }
+    }
+    h4{
+      font-family: $font-titles;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 42px */
+      color: $avocado;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      position: relative;
+      z-index: 2;
+    }
+    p{
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 25.2px */
+      color: $avocado;
+    }
+  }
+  .service-center-image{
+    padding-top: 0px;
+  }
+}

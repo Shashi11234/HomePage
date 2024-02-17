@@ -1,0 +1,88 @@
+.testimonial-video-block{
+  padding: 60px 0px;
+  h3 {
+    font-family: $font-body;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+    object-fit: cover;
+  }
+  &.single-vid{
+    background-color: $grey;
+    padding: 60px 0px;
+    .wrapper{
+      padding: 60px 20px;
+    }
+    h2{
+      max-width: 900px;
+      position: absolute;
+      color: #FFF;
+
+    }
+  }
+}
+
+.home{
+  .testimonial-video-block{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.tvid-content{
+  max-width: 600px;
+  margin-top: -15px;
+}
+.tvideo{
+  margin-bottom: 60px;
+  h2{
+    margin: -3% 0 0;
+    font-size: 7rem;
+    letter-spacing: -3px;
+  }
+}
+
+.video-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.playButton{
+  background-image: url("img/icon/play-btn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin-top: -140px;
+}
+.down-cheveron{
+  @include bg-contain();
+  background-image: url("img/icon/down-cheveron.svg");
+  width: 38px;
+  height: 12px;
+  position: absolute;
+  bottom: 52px;
+}
+
+@media screen and (max-width: 1000px) {
+  .tvideo h2 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
